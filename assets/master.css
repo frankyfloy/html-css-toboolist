@@ -1,0 +1,208 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+
+/*  ----HEADER----  */
+#header{
+    width: 100%;
+    padding: 1% 1% 0.5% 1.5%;
+    background-color: #ffffff;
+    vertical-align: bottom;
+}
+
+.Logo{
+    background: url("./img/Logo.png")  no-repeat;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+#header .Text-Logo:only-of-type{
+    display: inline;
+    vertical-align: top;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/* Text-Property */
+
+..Text-Logo,.Text-Main-List,.Text-Sublists,.Text-Button{
+    font-family: 'Roboto', sans-serif;
+}
+
+.Text-Logo,.Text-Button{
+    font-weight: bold;
+}
+
+.Text-Main-List{
+    font-size: 20px;
+    font-weight: 900;
+    display: inline;
+}
+
+.Text-Sublists{
+    font-weight: 500;
+}
+
+.Text-Button{
+    font-size: 75%;
+    color: #ffffff;
+}
+
+
+/*  ----ADD-SECTION---- */
+#add-section{
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 15%;
+    padding: 1% 1% 1% 3%;
+    background-color: #ffffff;
+}
+
+/* Button_Add-Section */
+#Button_Add-Task, #Button_Add-Section{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.2% 1%;
+    border-radius: 5px;
+}
+
+#Button_Add-Section{
+    border: solid #ccc 0.5px;
+}
+
+#Button_Add-Section > .Text-Button{
+    color: #ccc;
+}
+
+/* All-Button */
+.Button{
+
+}
+
+/* List */
+.Container-List{
+    width: 70%;
+    margin-top: 2px;
+    margin-left: 15%;
+    padding: 1% 1% 4% 3%;
+    background-color: white;
+}
+
+.Items-main-list:before {
+    /* down arrow */
+    content: '\25BE';
+}
+
+.Main-list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.Sublists{
+    list-style-type: none;
+    padding: 0;
+
+}
+
+
+/* ----True/false icons---- */
+
+/* Container of elements for creating the circle */
+.Container-items-row-li{
+    display: inline;
+}
+
+/*  Large outer circle true/false */
+.Large-circle-true, .Large-circle-false{
+    width: 18px;
+    height: 18px;
+    background: green;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.Large-circle-true{
+    background: green;
+}
+
+.Large-circle-false{
+    background: red;
+}
+
+/* Small white circle inside the
+    true/false circle */
+.small-circle{
+    width: 14px;
+    height: 14px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: block;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+
+/*  text inside the circle */
+.Container-items-row-li > .Large-circle-true :after{
+    content:' \2713';
+    vertical-align: text-top;
+    color: green;
+    padding-left: 1px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.Container-items-row-li > .Large-circle-false :after{
+    content:' \2715';
+    vertical-align: text-top;
+    color: red;
+    padding-left: 1.5px;
+    margin-top: 0px;
+    font-size: 13px;
+}
+
+.Container-List li{
+    margin-top: 1.5%;
+}
+
+/* Button List */
+.Button{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.2% 1%;
+    border-radius: 10px;
+}
+
+.Purple-Buttons{
+    background-color: #bf70f3;
+}
+
+.Turquoise-Buttons{
+    background-color: #4f9f91;
+}
+
+.Blue-Buttons{
+    background-color: #2ab4e1;
+}
+
+.Orange-Buttons{
+    background-color: orange;
+}
+
+.Gold-Buttons{
+    background-color: #F5D036;
+}
+
+.White-Buttons{
+    background-color: #ffffff;
+}
